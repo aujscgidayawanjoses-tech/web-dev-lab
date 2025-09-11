@@ -2,43 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Styling Activity</title>
+    <title>Basic CSS Style - Girly Aesthetic</title>
+
+    <!-- Internal CSS -->
     <style>
         body {
-            background-color: #f4f4f4;
-            font-family: Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 30px;
-        }
-        .box {
-            width: 250px;
-            padding: 20px;
-            background-color: #fff;
-            border: 3px solid #333;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        .box h2 {
+            background-color: #e6f0ff; /* light blue aesthetic */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             color: #333;
         }
+
+        h1 {
+            color: #4da6ff;
+            text-align: center;
+            text-shadow: 2px 2px #b3d1ff;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .favorite {
+            color: #ff66b2;
+            font-weight: bold;
+        }
     </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <h2>Box 1</h2>
-        <p>This is the first styled box.</p>
-    </div>
-    <div class="box">
-        <h2>Box 2</h2>
-        <p>This is the second styled box.</p>
-    </div>
-    <div class="box">
-        <h2>Box 3</h2>
-        <p>This is the third styled box.</p>
-    </div>
+    <h1>Hi! I'm Joses</h1>
+
+    <!-- Inline Style -->
+    <p style="color: #38adc4;">
+        Hello! I'm a girl who loves <span class="favorite">Pokémon</span> and <span class="favorite">Detective Conan</span>.
+    </p>
+
+    <p>
+        My favorite Pokémon is <span class="favorite">Pikachu</span> because she's so cute🌸✨  
+        And in Demon Slayer, I really like <span class="favorite">Nezuko</span> kasi she's strong but still sweet.  
+    </p>
+
+    <p>
+        This page is made with <span class="favorite">light blue aesthetic vibes</span> to match my mood .
+    </p>
 </body>
 </html>
