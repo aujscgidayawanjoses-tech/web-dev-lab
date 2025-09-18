@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Act - 3 | Lab 7 - Flexbox Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 30px;
+      background: #f0f6ff; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2c5f9e;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #d0d8e8;
+      border-radius: 12px;
+      width: 230px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      color: black;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeIn 1.2s ease-in-out;
+      text-decoration: none;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 14px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 12px 0 6px;
+      color: #2c5f9e;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    footer a {
+      color: #2c5f9e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h2>Act - 3 | Lab 7</h2>
+
+  <div class="card-container">
+    <a href="https://www.facebook.com/joses.gidayawan.2024" target="_blank" class="card">
+      <img src="https://scontent.fmnl8-4.fna.fbcdn.net/v/t39.30808-6/471599328_907874754895300_6132954730386328453_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGjI_e7DQztJRgVupSTeJdM3xzMuPkUrKXfHMy4-RSspYv2mWHOG74Um9FSKhP94AXBqP-n2ndNZeTRYj_tak3l&_nc_ohc=0jiBNeWMmz4Q7kNvwE0KpmX&_nc_oc=AdlT3Th5ZI0883Y-BXBWvPjBxSqa1g0bn675srLtefLZ99wfp8b-njUBBtl-xTI6jTg&_nc_zt=23&_nc_ht=scontent.fmnl8-4.fna&_nc_gid=hy3tPY__3-uxJ6haSQdx3g&oh=00_AfZORmMF4iNW887Y3a5lqh71Egg_mx8lk7fUi8jav4td0w&oe=68D099B7" alt="Joses">
+      <h3>Joses Gidayawan</h3>
+      <p>Loves books and writing</p>
+    </a>
+
+    <a href="https://www.facebook.com/raynan.marciales.3" target="_blank" class="card">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/480541470_1361108355063637_4123741671926175837_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHdL05XbCjyLnCJCrkJ_j6H6pob7v4OsTDqmhvu_g6xMLRujqOEw1K7YQJtmvPA-sUnHubzeUrTeioaq6Wvmdtd&_nc_ohc=lZ7nDK1KBTAQ7kNvwGN6eNG&_nc_oc=AdnYf-ziUfLMX0NlAAHRZrqlxmA7I-PGPMLQlz0K1mHL834jMWbYy-H5435IA4YGeVo&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=KrXAl3849lOFURuzO-QMjQ&oh=00_AfarYl-4AJtxJZYBwoYf1mCYIQAiUidKp1ZtqqMayznRPg&oe=68D096EF" alt="Raynan">
+      <h3>Raynan</h3>
+      <p>Loves code, games, anime</p>
+    </a>
+
+    <a href="https://www.facebook.com/nxe.domingo" target="_blank" class="card">
+      <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-1/533672049_4188016984853046_4096235252586713090_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeG3TjP-wmRKWJUodM93H2hSto-NtS0dO-S2j421LR075P1_aj-1LjUiiL2mgm6TdyTmKa82QLghZSELzE9HIBaL&_nc_ohc=sUNHZN_wu_kQ7kNvwHAmcZn&_nc_oc=Adlegoc29ThCukpZ76moa12DVN-nNC1eeoqLBsalbFJgmDyKemuK_MG0iEbR_jJo76E&_nc_zt=24&_nc_ht=scontent.fmnl8-2.fna&_nc_gid=Lqhl73W1gP1NovQbXGlYOA&oh=00_AfYCxjZroCYBgHuqyYeoRKO3Gvj-K7v5BE3sAvzNAlkF9A&oe=68D09471" alt="Noe">
+      <h3>Noe Domingo</h3>
+      <p>Loves drawing</p>
+    </a>
+
+    <a href="https://www.facebook.com/prcs.gld" target="_blank" class="card">
+      <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-1/530851071_1964692970953419_3751096800247776948_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEtdjQprEedo9UwtTPLADMYwvDN_dAyXRPC8M390DJdE3BmT4tpq1ChJs42v1IY2KfrPblClQqMhpfutz_2ahzt&_nc_ohc=0pxNje7WmmoQ7kNvwF7zFiY&_nc_oc=Adk8SLUAxgReRJpxSgJNp6RniJVPpNkG_m4bQqj-XkJTj_R5F2hJ8Hp8yPtP9Hkrle8&_nc_zt=24&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=-8Ily0cliZ5Ku-IcXIDu0Q&oh=00_AfYn2fqaqUU7xDDyWnsZK6nTpBuqCx3SkzIurnGZusur0A&oe=68D089A2" alt="Precy">
+      <h3>Precy</h3>
+      <p>Loves Taylor Swift</p>
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Joses's. All rights reserved. <br>
+    Follow me on <a href="https://www.instagram.com/jj_ose6?igsh=cjkyNXdqcDd5bXYz" target="_blank">Instagram</a><br>
+    Powered by: Joses Gidaywan
+  </footer>
+</body>
+</html>
