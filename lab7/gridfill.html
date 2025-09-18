@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Act - 2 | Lab 7</title>
+  <title>Act - 3 | Lab 7</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f6ff; /* light blue background */
+      background-color: #f0f6ff; 
+      padding: 30px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 30px;
     }
 
     h2 {
@@ -20,30 +20,31 @@
       animation: fadeIn 1s ease-in-out;
     }
 
-    .container {
-      display: flex;
-      justify-content: center; /* center horizontally */
-      gap: 20px; /* spacing between boxes */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px;
       background-color: #e1ecf9;
       padding: 20px;
       border-radius: 12px;
       animation: fadeIn 1.2s ease-in-out;
+      width: 80%;
+      max-width: 600px;
     }
 
-    .box {
-      background: #4a90e2;
+    .grid-item {
+      background-color: #4a90e2;
       color: white;
-      padding: 30px;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
+      padding: 20px;
       text-align: center;
-      width: 100px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
       transition: transform 0.3s;
     }
 
-    .box:hover {
-      transform: scale(1.1);
+    .grid-item:hover {
+      transform: scale(1.05);
     }
 
     @keyframes fadeIn {
@@ -66,12 +67,15 @@
   </style>
 </head>
 <body>
-  <h2>Flexbox | Lab 7</h2>
+  <h2>Act - 2 | Lab 7</h2>
 
-  <div class="container">
-    <div class="box">Box 1</div>
-    <div class="box">Box 2</div>
-    <div class="box">Box 3</div>
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+    <div class="grid-item">Item 5</div>
+    <div class="grid-item">Item 6</div>
   </div>
 
   <footer>
