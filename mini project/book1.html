@@ -5,126 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abakada</title>
   <link rel="stylesheet" href="book1.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fdfdfd;
-      color: #333;
-      text-align: center;
-    }
-
-    header {
-      background: #ffcc70;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    header p {
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .book-swipe-container {
-      padding: 20px;
-    }
-
-    .page-buttons {
-      margin-bottom: 15px;
-    }
-
-    .page-buttons input {
-      display: none;
-    }
-
-    .page-buttons label {
-      padding: 6px 12px;
-      margin: 2px;
-      border: 1px solid #333;
-      border-radius: 5px;
-      cursor: pointer;
-      background: #fff;
-      font-size: 14px;
-    }
-
-    .page-buttons label:hover {
-      background: #eee;
-    }
-
-    .pages .page {
-      display: none;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin: auto;
-      max-width: 300px;
-      background: #fafafa;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .book-illustration {
-      width: 120px;
-      height: auto;
-      margin: 10px 0;
-    }
-
-    input#page1:checked ~ .pages .page1,
-    input#page2:checked ~ .pages .page2,
-    input#page3:checked ~ .pages .page3,
-    input#page4:checked ~ .pages .page4,
-    input#page5:checked ~ .pages .page5,
-    input#page6:checked ~ .pages .page6,
-    input#page7:checked ~ .pages .page7,
-    input#page8:checked ~ .pages .page8,
-    input#page9:checked ~ .pages .page9,
-    input#page10:checked ~ .pages .page10,
-    input#page11:checked ~ .pages .page11,
-    input#page12:checked ~ .pages .page12,
-    input#page13:checked ~ .pages .page13,
-    input#page14:checked ~ .pages .page14,
-    input#page15:checked ~ .pages .page15,
-    input#page16:checked ~ .pages .page16,
-    input#page17:checked ~ .pages .page17,
-    input#page18:checked ~ .pages .page18,
-    input#page19:checked ~ .pages .page19,
-    input#page20:checked ~ .pages .page20,
-    input#page21:checked ~ .pages .page21,
-    input#page22:checked ~ .pages .page22,
-    input#page23:checked ~ .pages .page23,
-    input#page24:checked ~ .pages .page24,
-    input#page25:checked ~ .pages .page25,
-    input#page26:checked ~ .pages .page26 {
-      display: block;
-    }
-
-    .back-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 8px 14px;
-      text-decoration: none;
-      color: #fff;
-      background: #333;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-
-    .back-btn:hover {
-      background: #555;
-    }
-
-    footer {
-      background: #222;
-      color: #fff;
-      padding: 10px;
-      font-size: 12px;
-      margin-top: 20px;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -133,119 +13,120 @@
   </header>
 
   <main class="book-swipe-container">
-    <!-- Page selectors -->
-    <div class="page-buttons">
-      <!-- A-Z buttons -->
-      <input type="radio" name="page" id="page1" checked>
-      <label for="page1">A</label>
-      <input type="radio" name="page" id="page2">
-      <label for="page2">B</label>
-      <input type="radio" name="page" id="page3">
-      <label for="page3">C</label>
-      <input type="radio" name="page" id="page4">
-      <label for="page4">D</label>
-      <input type="radio" name="page" id="page5">
-      <label for="page5">E</label>
-      <input type="radio" name="page" id="page6">
-      <label for="page6">F</label>
-      <input type="radio" name="page" id="page7">
-      <label for="page7">G</label>
-      <input type="radio" name="page" id="page8">
-      <label for="page8">H</label>
-      <input type="radio" name="page" id="page9">
-      <label for="page9">I</label>
-      <input type="radio" name="page" id="page10">
-      <label for="page10">J</label>
-      <input type="radio" name="page" id="page11">
-      <label for="page11">K</label>
-      <input type="radio" name="page" id="page12">
-      <label for="page12">L</label>
-      <input type="radio" name="page" id="page13">
-      <label for="page13">M</label>
-      <input type="radio" name="page" id="page14">
-      <label for="page14">N</label>
-      <input type="radio" name="page" id="page15">
-      <label for="page15">O</label>
-      <input type="radio" name="page" id="page16">
-      <label for="page16">P</label>
-      <input type="radio" name="page" id="page17">
-      <label for="page17">Q</label>
-      <input type="radio" name="page" id="page18">
-      <label for="page18">R</label>
-      <input type="radio" name="page" id="page19">
-      <label for="page19">S</label>
-      <input type="radio" name="page" id="page20">
-      <label for="page20">T</label>
-      <input type="radio" name="page" id="page21">
-      <label for="page21">U</label>
-      <input type="radio" name="page" id="page22">
-      <label for="page22">V</label>
-      <input type="radio" name="page" id="page23">
-      <label for="page23">W</label>
-      <input type="radio" name="page" id="page24">
-      <label for="page24">X</label>
-      <input type="radio" name="page" id="page25">
-      <label for="page25">Y</label>
-      <input type="radio" name="page" id="page26">
-      <label for="page26">Z</label>
-    </div>
+    <div class="book-content">
+      <!-- Inputs (hidden radio buttons) -->
+      <input type="radio" name="page" id="pageA" checked>
+      <input type="radio" name="page" id="pageB">
+      <input type="radio" name="page" id="pageC">
+      <input type="radio" name="page" id="pageD">
+      <input type="radio" name="page" id="pageE">
+      <input type="radio" name="page" id="pageF">
+      <input type="radio" name="page" id="pageG">
+      <input type="radio" name="page" id="pageH">
+      <input type="radio" name="page" id="pageI">
+      <input type="radio" name="page" id="pageJ">
+      <input type="radio" name="page" id="pageK">
+      <input type="radio" name="page" id="pageL">
+      <input type="radio" name="page" id="pageM">
+      <input type="radio" name="page" id="pageN">
+      <input type="radio" name="page" id="pageO">
+      <input type="radio" name="page" id="pageP">
+      <input type="radio" name="page" id="pageQ">
+      <input type="radio" name="page" id="pageR">
+      <input type="radio" name="page" id="pageS">
+      <input type="radio" name="page" id="pageT">
+      <input type="radio" name="page" id="pageU">
+      <input type="radio" name="page" id="pageV">
+      <input type="radio" name="page" id="pageW">
+      <input type="radio" name="page" id="pageX">
+      <input type="radio" name="page" id="pageY">
+      <input type="radio" name="page" id="pageZ">
 
-    <!-- Pages -->
-    <div class="pages">
-      <div class="page page1">
-        <h2>A – Aso</h2>
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Aso" class="book-illustration">
-        <p>“A” ay para sa *Aso* na mabait at tapat.</p>
+      
+      <div class="page-buttons">
+        <div class="labels">
+          <label for="pageA">A</label>
+          <label for="pageB">B</label>
+          <label for="pageC">C</label>
+          <label for="pageD">D</label>
+          <label for="pageE">E</label>
+          <label for="pageF">F</label>
+          <label for="pageG">G</label>
+          <label for="pageH">H</label>
+          <label for="pageI">I</label>
+          <label for="pageJ">J</label>
+          <label for="pageK">K</label>
+          <label for="pageL">L</label>
+          <label for="pageM">M</label>
+          <label for="pageN">N</label>
+          <label for="pageO">O</label>
+          <label for="pageP">P</label>
+          <label for="pageQ">Q</label>
+          <label for="pageR">R</label>
+          <label for="pageS">S</label>
+          <label for="pageT">T</label>
+          <label for="pageU">U</label>
+          <label for="pageV">V</label>
+          <label for="pageW">W</label>
+          <label for="pageX">X</label>
+          <label for="pageY">Y</label>
+          <label for="pageZ">Z</label>
+        </div>
       </div>
 
-      <div class="page page2">
-        <h2>B – Bola</h2>
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Bola" class="book-illustration">
-        <p>“B” ay para sa *Bola* na masayang laruin.</p>
+      <!-- Pages -->
+      <div class="pages">
+        <div class="page" id="contentA">
+          <h2>A – Aso</h2>
+          <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Aso" class="book-illustration">
+          <p>“A” ay para sa <b>Aso</b> na mabait at tapat.</p>
+        </div>
+        <div class="page" id="contentB">
+          <h2>B – Bola</h2>
+          <img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Bola" class="book-illustration">
+          <p>“B” ay para sa <b>Bola</b> na masayang laruin.</p>
+        </div>
+        <div class="page" id="contentC">
+          <h2>C – Cat</h2>
+          <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Pusa" class="book-illustration">
+          <p>“C” ay para sa <b>Cat</b> o Pusa na mahilig matulog.</p>
+        </div>
+        <div class="page" id="contentD">
+          <h2>D – Dahon</h2>
+          <img src="https://cdn-icons-png.flaticon.com/512/766/766486.png" alt="Dahon" class="book-illustration">
+          <p>“D” ay para sa <b>Dahon</b> na luntian at sariwa.</p>
+        </div>
+        <!-- Continue E to Z with your chosen images -->
+        <div class="page" id="contentE"><h2>E – Elepante</h2></div>
+        <div class="page" id="contentF"><h2>F – Isda (Fish)</h2></div>
+        <div class="page" id="contentG"><h2>G – Gatas</h2></div>
+        <div class="page" id="contentH"><h2>H – Halaman</h2></div>
+        <div class="page" id="contentI"><h2>I – Ibon</h2></div>
+        <div class="page" id="contentJ"><h2>J – Jeep</h2></div>
+        <div class="page" id="contentK"><h2>K – Kabayo</h2></div>
+        <div class="page" id="contentL"><h2>L – Lapis</h2></div>
+        <div class="page" id="contentM"><h2>M – Mangga</h2></div>
+        <div class="page" id="contentN"><h2>N – Niyog</h2></div>
+        <div class="page" id="contentO"><h2>O – Orasan</h2></div>
+        <div class="page" id="contentP"><h2>P – Payong</h2></div>
+        <div class="page" id="contentQ"><h2>Q – Quezo (Keso)</h2></div>
+        <div class="page" id="contentR"><h2>R – Rosas</h2></div>
+        <div class="page" id="contentS"><h2>S – Saging</h2></div>
+        <div class="page" id="contentT"><h2>T – Tinapay</h2></div>
+        <div class="page" id="contentU"><h2>U – Ubas</h2></div>
+        <div class="page" id="contentV"><h2>V – Volpi (Fox)</h2></div>
+        <div class="page" id="contentW"><h2>W – Walis</h2></div>
+        <div class="page" id="contentX"><h2>X – Xylophone</h2></div>
+        <div class="page" id="contentY"><h2>Y – Yoyo</h2></div>
+        <div class="page" id="contentZ"><h2>Z – Zebra</h2></div>
       </div>
-
-      <div class="page page3">
-        <h2>C – Cat (Pusa)</h2>
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Cat" class="book-illustration">
-        <p>“C” ay para sa *Cat* o Pusa na mahilig matulog.</p>
-      </div>
-
-      <div class="page page4">
-        <h2>D – Dahon</h2>
-        <img src="https://cdn-icons-png.flaticon.com/512/765/765614.png" alt="Dahon" class="book-illustration">
-        <p>“D” ay para sa *Dahon* na luntian at sariwa.</p>
-      </div>
-
-      <!-- Continue hanggang Z -->
-      <div class="page page5"><h2>E – Elepante</h2><img src="https://cdn-icons-png.flaticon.com/512/1998/1998627.png" alt="Elepante" class="book-illustration"><p>“E” ay para sa *Elepante* na malaki at mabait.</p></div>
-      <div class="page page6"><h2>F – Fish (Isda)</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Isda" class="book-illustration"><p>“F” ay para sa *Fish* o Isda na lumalangoy sa dagat.</p></div>
-      <div class="page page7"><h2>G – Gatas</h2><img src="https://cdn-icons-png.flaticon.com/512/135/135700.png" alt="Gatas" class="book-illustration"><p>“G” ay para sa *Gatas* na pampalusog sa katawan.</p></div>
-      <div class="page page8"><h2>H – Hat (Sumbrero)</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Hat" class="book-illustration"><p>“H” ay para sa *Hat* o Sumbrero na pananggalang sa araw.</p></div>
-      <div class="page page9"><h2>I – Ilog</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Ilog" class="book-illustration"><p>“I” ay para sa *Ilog* na malamig at dumadaloy.</p></div>
-      <div class="page page10"><h2>J – Jeep</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Jeep" class="book-illustration"><p>“J” ay para sa *Jeep* na sasakyang Pinoy.</p></div>
-      <div class="page page11"><h2>K – Kalabaw</h2><img src="https://cdn-icons-png.flaticon.com/512/1998/1998616.png" alt="Kalabaw" class="book-illustration"><p>“K” ay para sa *Kalabaw* na masipag sa bukid.</p></div>
-      <div class="page page12"><h2>L – Lapis</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Lapis" class="book-illustration"><p>“L” ay para sa *Lapis* na gamit sa pagsusulat.</p></div>
-      <div class="page page13"><h2>M – Mangga</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Mangga" class="book-illustration"><p>“M” ay para sa *Mangga* na matamis at masarap.</p></div>
-      <div class="page page14"><h2>N – Niyog</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Niyog" class="book-illustration"><p>“N” ay para sa *Niyog* na may sariwang sabaw.</p></div>
-      <div class="page page15"><h2>O – Oras (Clock)</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Oras" class="book-illustration"><p>“O” ay para sa *Oras* na dapat pahalagahan.</p></div>
-      <div class="page page16"><h2>P – Papaya</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Papaya" class="book-illustration"><p>“P” ay para sa *Papaya* na masustansya at masarap.</p></div>
-      <div class="page page17"><h2>Q – Queen (Reyna)</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Queen" class="book-illustration"><p>“Q” ay para sa *Queen* o Reyna ng kaharian.</p></div>
-      <div class="page page18"><h2>R – Rosas</h2><img src="https://cdn-icons-png.flaticon.com/512/765/765624.png" alt="Rosas" class="book-illustration"><p>“R” ay para sa *Rosas* na maganda at mabango.</p></div>
-      <div class="page page19"><h2>S – Saging</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Saging" class="book-illustration"><p>“S” ay para sa *Saging* na paborito ng marami.</p></div>
-      <div class="page page20"><h2>T – Tren</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Tren" class="book-illustration"><p>“T” ay para sa *Tren* na mabilis magdala ng pasahero.</p></div>
-      <div class="page page21"><h2>U – Ubas</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Ubas" class="book-illustration"><p>“U” ay para sa *Ubas* na maliliit pero matamis.</p></div>
-      <div class="page page22"><h2>V – Van</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Van" class="book-illustration"><p>“V” ay para sa *Van* na sasakyan ng pamilya.</p></div>
-      <div class="page page23"><h2>W – Watermelon (Pakwan)</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Pakwan" class="book-illustration"><p>“W” ay para sa *Watermelon* o Pakwan na masarap tuwing tag-init.</p></div>
-      <div class="page page24"><h2>X – Xylophone</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Xylophone" class="book-illustration"><p>“X” ay para sa *Xylophone* na instrumentong tumutunog.</p></div>
-      <div class="page page25"><h2>Y – Yoyo</h2><img src="https://cdn-icons-png.flaticon.com/512/616/616490.png" alt="Yoyo" class="book-illustration"><p>“Y” ay para sa *Yoyo* na laruan ng bata.</p></div>
-      <div class="page page26"><h2>Z – Zebra</h2><img src="https://cdn-icons-png.flaticon.com/512/1998/1998632.png" alt="Zebra" class="book-illustration"><p>“Z” ay para sa *Zebra* na may guhit na itim at puti.</p></div>
     </div>
 
     <a href="index.html" class="back-btn">← Back to Hub</a>
   </main>
 
   <footer>
-    <p>© 2025 Joses's. All rights reserved. Powered by: Joses Gidayawan</p>
+    <p>© 2025 All rights reserved. Powered by: Joses Gidayawan</p>
   </footer>
 </body>
 </html>

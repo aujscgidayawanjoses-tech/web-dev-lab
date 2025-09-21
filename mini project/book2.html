@@ -3,46 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Title 2</title>
+  <title>Bahay Kubo</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .book-page {
+      max-width: 500px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .book-page img {
+      max-width: 200px;
+      margin: 15px 0;
+    }
+    .lyrics {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      white-space: pre-line; /* respect line breaks */
+    }
+
+     .book-container {
+      max-width: 500px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      text-align: center;
+    }
+    .book-container img {
+      width: 150px;
+      margin-bottom: 15px;
+    }
+    .book-container h2 {
+      margin-bottom: 10px;
+      color: #4CAF50;
+    }
+    .book-container p {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 2px solid #4CAF50;
+      color: #4CAF50;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    .back-btn:hover {
+      background: #4CAF50;
+      color: white;
+    }
+    
+  </style>
 </head>
 <body>
   <header>
-    <h1>Book Title 2</h1>
+    <h1>Bahay Kubo</h1>
+    <p>Created by Joses Gidayawan</p>
   </header>
 
-  <main class="book-swipe-container">
+  <main>
+    <div class="book-page">
+      <h2>Awit ng Bahay Kubo</h2>
+      <img src="https://th.bing.com/th/id/OIP.9IgC8dBIlQ3dgRtA1oWfmQHaLG?w=128&h=192&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3">
 
-    
-    <div class="page-buttons">
-      <input type="radio" name="page" id="page1" checked>
-      <input type="radio" name="page" id="page2">
-      <input type="radio" name="page" id="page3">
+      <p class="lyrics">
+Bahay kubo, kahit munti  
+Ang halaman doon ay sari-sari.  
 
-      <label for="page1">Page 1</label>
-      <label for="page2">Page 2</label>
-      <label for="page3">Page 3</label>
-    </div>
+Singkamas at talong, sigarilyas at mani,  
+Sitaw, bataw, patani.  
 
-    
-    <div class="pages">
-      <div class="page page1">
-        <h2>Summary</h2>
-        <p>Type your book summary here...</p>
-      </div>
+Kundol, patola, upo’t kalabasa,  
+At saka mayroon pang labanos, mustasa.  
 
-      <div class="page page2">
-        <h2>Review</h2>
-        <p>Type your review here...</p>
-      </div>
-
-      <div class="page page3">
-        <h2>Extra Notes</h2>
-        <p>Type extra notes or analysis here...</p>
-      </div>
+sibuyas, kamatis, bawang at luya,  
+sa paligid-ligid ay puro linga.
+      </p>
     </div>
 
     <a href="index.html" class="back-btn">← Back to Hub</a>
   </main>
+
+  <footer>
+    <p>© 2025 All rights reserved. Powered by: Joses Gidayawan</p>
+  </footer>
 </body>
 </html>

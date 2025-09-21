@@ -123,34 +123,3 @@ footer {
   font-size: 0.8rem;
 }
 
-.pages .page {
-  display: none;
-}
-
-/* A – Z show rules */
-#page1:checked ~ .pages .page:nth-child(1) { display: block; }
-#page2:checked ~ .pages .page:nth-child(2) { display: block; }
-#page3:checked ~ .pages .page:nth-child(3) { display: block; }
-#page4:checked ~ .pages .page:nth-child(4) { display: block; }
-#page5:checked ~ .pages .page:nth-child(5) { display: block; }
-#page6:checked ~ .pages .page:nth-child(6) { display: block; }
-#page7:checked ~ .pages .page:nth-child(7) { display: block; }
-#page8:checked ~ .pages .page:nth-child(😎 { display: block; }
-#page9:checked ~ .pages .page:nth-child(9) { display: block; }
-#page10:checked ~ .pages .page:nth-child(10) { display: block; }
-#page11:checked ~ .pages .page:nth-child(11) { display: block; }
-#page12:checked ~ .pages .page:nth-child(12) { display: block; }
-#page13:checked ~ .pages .page:nth-child(13) { display: block; }
-#page14:checked ~ .pages .page:nth-child(14) { display: block; }
-#page15:checked ~ .pages .page:nth-child(15) { display: block; }
-#page16:checked ~ .pages .page:nth-child(16) { display: block; }
-#page17:checked ~ .pages .page:nth-child(17) { display: block; }
-#page18:checked ~ .pages .page:nth-child(18) { display: block; }
-#page19:checked ~ .pages .page:nth-child(19) { display: block; }
-#page20:checked ~ .pages .page:nth-child(20) { display: block; }
-#page21:checked ~ .pages .page:nth-child(21) { display: block; }
-#page22:checked ~ .pages .page:nth-child(22) { display: block; }
-#page23:checked ~ .pages .page:nth-child(23) { display: block; }
-#page24:checked ~ .pages .page:nth-child(24) { display: block; }
-#page25:checked ~ .pages .page:nth-child(25) { display: block; }
-#page26:checked ~ .pages .page:nth-child(26) { display: block; }
