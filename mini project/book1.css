@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+}
+
+.book-swipe-container {
+  padding: 1rem;
+}
+
+.page-buttons {
+  margin-bottom: 1rem;
+}
+
+.page-buttons input {
+  display: none;
+}
+
+.page-buttons .labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.page-buttons label {
+  padding: 6px 10px;
+  background: #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.page-buttons label:hover {
+  background: #bbb;
+}
+
+/* Pages */
+.pages {
+  max-width: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page {
+  display: none;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.book-illustration {
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Show correct page */
+#pageA:checked ~ .pages #contentA,
+#pageB:checked ~ .pages #contentB,
+#pageC:checked ~ .pages #contentC,
+#pageD:checked ~ .pages #contentD,
+#pageE:checked ~ .pages #contentE,
+#pageF:checked ~ .pages #contentF,
+#pageG:checked ~ .pages #contentG,
+#pageH:checked ~ .pages #contentH,
+#pageI:checked ~ .pages #contentI,
+#pageJ:checked ~ .pages #contentJ,
+#pageK:checked ~ .pages #contentK,
+#pageL:checked ~ .pages #contentL,
+#pageM:checked ~ .pages #contentM,
+#pageN:checked ~ .pages #contentN,
+#pageO:checked ~ .pages #contentO,
+#pageP:checked ~ .pages #contentP,
+#pageQ:checked ~ .pages #contentQ,
+#pageR:checked ~ .pages #contentR,
+#pageS:checked ~ .pages #contentS,
+#pageT:checked ~ .pages #contentT,
+#pageU:checked ~ .pages #contentU,
+#pageV:checked ~ .pages #contentV,
+#pageW:checked ~ .pages #contentW,
+#pageX:checked ~ .pages #contentX,
+#pageY:checked ~ .pages #contentY,
+#pageZ:checked ~ .pages #contentZ {
+  display: block;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  background: #45a049;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+.pages .page {
+  display: none;
+}
+
+/* A – Z show rules */
+#page1:checked ~ .pages .page:nth-child(1) { display: block; }
+#page2:checked ~ .pages .page:nth-child(2) { display: block; }
+#page3:checked ~ .pages .page:nth-child(3) { display: block; }
+#page4:checked ~ .pages .page:nth-child(4) { display: block; }
+#page5:checked ~ .pages .page:nth-child(5) { display: block; }
+#page6:checked ~ .pages .page:nth-child(6) { display: block; }
+#page7:checked ~ .pages .page:nth-child(7) { display: block; }
+#page8:checked ~ .pages .page:nth-child(😎 { display: block; }
+#page9:checked ~ .pages .page:nth-child(9) { display: block; }
+#page10:checked ~ .pages .page:nth-child(10) { display: block; }
+#page11:checked ~ .pages .page:nth-child(11) { display: block; }
+#page12:checked ~ .pages .page:nth-child(12) { display: block; }
+#page13:checked ~ .pages .page:nth-child(13) { display: block; }
+#page14:checked ~ .pages .page:nth-child(14) { display: block; }
+#page15:checked ~ .pages .page:nth-child(15) { display: block; }
+#page16:checked ~ .pages .page:nth-child(16) { display: block; }
+#page17:checked ~ .pages .page:nth-child(17) { display: block; }
+#page18:checked ~ .pages .page:nth-child(18) { display: block; }
+#page19:checked ~ .pages .page:nth-child(19) { display: block; }
+#page20:checked ~ .pages .page:nth-child(20) { display: block; }
+#page21:checked ~ .pages .page:nth-child(21) { display: block; }
+#page22:checked ~ .pages .page:nth-child(22) { display: block; }
+#page23:checked ~ .pages .page:nth-child(23) { display: block; }
+#page24:checked ~ .pages .page:nth-child(24) { display: block; }
+#page25:checked ~ .pages .page:nth-child(25) { display: block; }
+#page26:checked ~ .pages .page:nth-child(26) { display: block; }
