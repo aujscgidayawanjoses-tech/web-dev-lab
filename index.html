@@ -21,121 +21,76 @@
   </header>
 
   <div class="container">
-    <div class="sidebar">
-      <h3>Activities</h3>
-      <ul>
-        <li> Lab 1: Intro
-          <ul>
-            <li>
-              <a href="lab1/act1.1.html" target="activity-frame">Activity 1</a>
-            </li>
-          </ul>
-        </li>
-        <li> Lab 2: Git
-          <ul>
-            <li>
-              <a href="lab2/act2.1.html" target="activity-frame">Activity 2.1</a>
-            </li>
-          </ul>
-        </li>
-        <li> Lab 3: Workflow
-          <ul>
-            <li>
-              <a href="lab3/act3.1.html" target="activity-frame">Activity 3</a>
-            </li>
-          </ul>
-        </li>
-        <li> Lab 4: HTML5 (Part 1)
-          <ul>
-            <li>
-              <a href="lab4/about.html" target="activity-frame">About Me</a>
-            </li>
-            <li>
-              <a href="lab4/index.html" target="activity-frame">Index</a>
-            </li>
-            <li>
-              <a href="lab4/favorites.html" target="activity-frame">Favorites</a>
-            </li>
-             <li>
-              <a href="lab4/wireframe.html" target="activity-frame">Wireframe</a>
-            </li>
-          </ul>
-        </li>     
-         <li> Lab 5: HTML5 (Part 2)
-          <ul>
-            <li>
-              <a href="lab5/embed-demo.html" target="activity-frame">Embedded Video</a>
-            </li>
-            <li>
-              <a href="lab5/link.html" target="activity-frame">Hyperlink</a>
-            </li>
-            <li>
-              <a href="lab5/nav-page.html" target="activity-frame">Navigation Page</a>
-            </li>
-             <li>
-              <a href="lab5/index.html" target="activity-frame">Travel Blog</a>
-           </li>
-            <li>
-              <a href="lab5/visual-code.html" target="activity-frame">Visual to Code</a>
-            </li>
-          </ul>
-        </li>   
-        <li> Lab 6
-          <ul>
-            <li>
-              <a href="lab6/basic-style.html" target="activity-frame">Basic-style</a>
-            </li>
-            <li>
-              <a href="lab6/box-style.html" target="activity-frame">Box-style</a>
-            </li>
-            <li>
-              <a href="lab6/fix-style.html" target="activity-frame">Fix-style</a>
-            </li>
-             <li>
-              <a href="lab6/text-style.html" target="activity-frame">Text-style</a>
-           </li>
-            <li>
-              <a href="lab6/wireframe-style.html" target="activity-frame">Wireframe-style</a>
-            </li>
-          </ul>
-        </li>
-         <li> Lab 7
-          <ul>
-            <li>
-              <a href="lab7/cards.html" target="activity-frame">Cards</a>
-            </li>
-            <li>
-              <a href="lab7/flexbox.html" target="activity-frame">Flexbox</a>
-            </li>
-            <li>
-              <a href="lab7/flexfix.html" target="activity-frame">Flexfix</a>
-            </li>
-             <li>
-              <a href="lab7/gridfill.html" target="activity-frame">Gridfill</a>
-           </li>
-            <li>
-              <a href="lab7/wireframe.html" target="activity-frame">Wireframe-style (7)</a>
-            </li>
-          </ul>
-        </li>
-        <li>Mini Cafe
-          <ul>
-            <li><a href="mini-cafe-site/index.html" target="activity-frame">Home Page</a></li>
-          </ul>
-        </li>
-      </ul>
-        <li>Mini Project
-          <ul>
-            <li><a href="mini-project/index.html" target="activity-frame">Home Page</a></li>
-          </ul>
-        </li>
-      </ul>
-        
-    </div>
+  
+    <aside class="sidebar">
+      <ul class="menu">
+       
+        <li><a href="lab1/act1.1.html" target="activity-frame" class="lab-link">Lab 1</a></li>
+        <li><a href="lab2/act2.1.html" target="activity-frame" class="lab-link">Lab 2</a></li>
+        <li><a href="lab3/act3.1.html" target="activity-frame" class="lab-link">Lab 3</a></li>
 
-    <div class="content">
+        <!-- Lab 4 -->
+        <li class="dropdown">
+          <input type="checkbox" id="lab4">
+          <label for="lab4" class="lab-label">Lab 4 ▾</label>
+          <ul class="submenu">
+            <li><a href="lab4/about.html" target="activity-frame">Activity 4.1</a></li>
+            <li><a href="lab4/favorites.html" target="activity-frame">Activity 4.2</a></li>
+            <li><a href="lab4/index.html" target="activity-frame">Activity 4.3</a></li>
+            <li><a href="lab4/wireframe.html" target="activity-frame">Activity 4.4</a></li>
+          </ul>
+        </li>
+
+        <!-- Lab 5 -->
+        <li class="dropdown">
+          <input type="checkbox" id="lab5">
+          <label for="lab5" class="lab-label">Lab 5 ▾</label>
+          <ul class="submenu">
+            <li><a href="lab5/destination.html" target="activity-frame">Activity 5.1</a></li>
+            <li><a href="lab5/embed-demo.html" target="activity-frame">Activity 5.2</a></li>
+            <li><a href="lab5/index.html" target="activity-frame">Activity 5.3</a></li>
+            <li><a href="lab5/link.html" target="activity-frame">Activity 5.4</a></li>
+            <li><a href="lab5/nav-page.html" target="activity-frame">Activity 5.5</a></li>
+            <li><a href="lab5/visual-code.html" target="activity-frame">Activity 5.6</a></li>
+          </ul>
+        </li>
+
+        
+        <li class="dropdown">
+          <input type="checkbox" id="lab6">
+          <label for="lab6" class="lab-label">Lab 6 ▾</label>
+          <ul class="submenu">
+            <li><a href="lab6/basic-style.html" target="activity-frame">Activity 6.1</a></li>
+            <li><a href="lab6/box-style.html" target="activity-frame">Activity 6.2</a></li>
+            <li><a href="lab6/fix-style.html" target="activity-frame">Activity 6.3</a></li>
+            <li><a href="lab6/text-style.html" target="activity-frame">Activity 6.4</a></li>
+            <li><a href="lab6/wireframe-style.html" target="activity-frame">Activity 6.5</a></li>
+          </ul>
+        </li>
+
+    
+        <li class="dropdown">
+          <input type="checkbox" id="lab7">
+          <label for="lab7" class="lab-label">Lab 7 ▾</label>
+          <ul class="submenu">
+            <li><a href="lab7/cards.html" target="activity-frame">Activity 7.1</a></li>
+            <li><a href="lab7/flexbox.html" target="activity-frame">Activity 7.2</a></li>
+            <li><a href="lab7/flexfix.html" target="activity-frame">Activity 7.3</a></li>
+            <li><a href="lab7/gridfill.html" target="activity-frame">Activity 7.4</a></li>
+            <li><a href="lab7/wireframe.html" target="activity-frame">Activity 7.5</a></li>
+          </ul>
+        </li>
+
+       
+        <li><a href="mini-cafe-site/index.html" target="activity-frame" class="mini-cafe">Mini Cafe</a></li>
+        <li><a href="mini-project/index.html" target="activity-frame" class="mini-project">Mini Project</a></li>
+      </ul>
+    </aside>
+
+    
+    <main class="content">
       <iframe name="activity-frame"></iframe>
-    </div>
+    </main>
   </div>
 
 </body>

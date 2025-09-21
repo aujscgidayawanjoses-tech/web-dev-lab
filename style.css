@@ -3,25 +3,23 @@ body {
   margin: 0;
   background: #f9fafc;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /* Header */
 header {
   background: linear-gradient(135deg, #0077cc, #005fa3);
   color: white;
-  padding: 1.5rem;
+  padding: 1.2rem;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  animation: slideDown 0.6s ease;
 }
 
 header h2 {
   margin: 0;
   font-size: 2rem;
-  letter-spacing: 1px;
 }
 
 header p {
@@ -31,86 +29,145 @@ header p {
 
 .custom-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
   margin-top: 5px;
   display: inline-block;
-  transition: 0.3s ease;
 }
 
 .custom-link:hover {
   color: #ffd700;
-  transform: scale(1.05);
 }
 
 /* Layout */
 .container {
   display: flex;
-  height: 90vh;
+  flex: 1;
 }
 
 /* Sidebar */
 .sidebar {
-  width: 22%;
-  background: #ffffff;
-  padding: 20px;
-  box-sizing: border-box;
-  border-right: 1px solid #ddd;
+  width: 230px;
+  background: #fff;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.08);
+  padding: 15px;
   overflow-y: auto;
-  transition: 0.3s;
-  animation: fadeIn 0.8s ease;
 }
 
-.sidebar h3 {
-  margin-top: 0;
-  font-size: 1.3rem;
-  border-bottom: 2px solid #0077cc;
-  padding-bottom: 8px;
-  margin-bottom: 15px;
-}
-
-.sidebar ul {
+.menu {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.sidebar li {
-  margin: 10px 0;
-  font-weight: 500;
-  transition: 0.3s ease;
+.menu li {
+  margin-bottom: 10px;
 }
 
-.sidebar li:hover {
-  transform: translateX(5px);
-}
-
-.sidebar li ul {
-  margin-left: 15px;
-  padding-left: 0px;
-  border-left: 2px solid #e3e3e3;
-  padding-left: 10px;
-}
-
-.sidebar a {
+/* Lab links (direct) */
+.lab-link {
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  background: #e3f2fd; /* light blue */
   text-decoration: none;
   color: #0077cc;
-  display: inline-block;
-  padding: 4px 0;
+  font-weight: 500;
   transition: 0.3s;
 }
 
-.sidebar a:hover {
-  color: #005fa3;
-  font-weight: bold;
+.lab-link:hover {
+  background: #0077cc;
+  color: white;
 }
 
-/* Content area */
+/* Dropdowns */
+.dropdown input {
+  display: none;
+}
+
+.lab-label {
+  display: block;
+  padding: 10px;
+  background: #e3f2fd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #0077cc;
+  transition: 0.3s;
+}
+
+.lab-label:hover {
+  background: #0077cc;
+  color: white;
+}
+
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.submenu li a {
+  display: block;
+  padding: 8px 12px;
+  margin: 5px 0;
+  background: #fafafa;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.submenu li a:hover {
+  background: #0077cc;
+  color: #fff;
+}
+
+/* Show submenu */
+.dropdown input:checked ~ .submenu {
+  max-height: 400px; /* enough space */
+  overflow-y: auto;  /* scroll if marami */
+}
+
+/* Mini Cafe (brown) */
+.mini-cafe {
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  background: #8d6e63;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.mini-cafe:hover {
+  background: #5d4037;
+}
+
+/* Mini Project (green) */
+.mini-project {
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  background: #43a047;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.mini-project:hover {
+  background: #2e7d32;
+}
+
+/* Content */
 .content {
-  width: 78%;
+  flex: 1;
   padding: 15px;
-  box-sizing: border-box;
   background: #fdfdfd;
-  animation: fadeIn 1s ease;
 }
 
 iframe {
@@ -120,16 +177,4 @@ iframe {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: 0.3s ease;
-}
-
-/* Animations */
-@keyframes slideDown {
-  from { transform: translateY(-50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
 }
