@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .text {
+      background: #ffb347;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .image {
+      background: #6a82fb;
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+      }
+      .text, .image {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Two Column Layout</h1>
+  <div class="container">
+    <div class="text">This is the text section.</div>
+    <div class="image">This is the image section.</div>
+  </div>
+</body>
+</html>

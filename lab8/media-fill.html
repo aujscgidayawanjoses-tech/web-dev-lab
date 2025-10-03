@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries Fill</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Verdana, sans-serif;
+    }
+
+    .container {
+      display: block;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+        background: #f0f9ff;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+
+    .item {
+      padding: 30px;
+      text-align: center;
+      border-radius: 8px;
+      background: #a18cd1;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Query Example</h1>
+  <div class="container">
+    <div class="item">Content 1</div>
+    <div class="item">Content 2</div>
+  </div>
+</body>
+</html>
