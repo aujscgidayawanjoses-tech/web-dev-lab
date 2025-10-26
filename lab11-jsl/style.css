@@ -1,0 +1,153 @@
+
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+
+  background: linear-gradient(120deg, #f4f7f9, #ffffff);
+
+  color: #333;
+
+  margin: 0;
+
+  padding: 40px 20px;
+
+  text-align: center;
+
+  transition: background 0.5s ease-in-out;
+
+}
+ 
+/* Headings */
+
+h2 {
+
+  color: #2b3d52;
+
+  margin-bottom: 20px;
+
+  letter-spacing: 0.5px;
+
+}
+ 
+/* Paragraphs */
+
+p {
+
+  font-size: 15px;
+
+  color: #555;
+
+}
+ 
+/* ===== Buttons ===== */
+
+button {
+
+  background: #0078d7;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 10px 20px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+ 
+button:hover {
+
+  background: #005fa3;
+
+  transform: scale(1.05);
+
+}
+ 
+/* ===== Inputs ===== */
+
+input[type="text"],
+
+input[type="number"] {
+
+  padding: 8px 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  width: 180px;
+
+  margin: 5px;
+
+  transition: all 0.3s;
+
+}
+ 
+input:focus {
+
+  outline: none;
+
+  border-color: #0078d7;
+
+  box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+
+}
+ 
+/* ===== Cards / Containers ===== */
+
+.card {
+
+  background: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  padding: 20px;
+
+  margin: 20px auto;
+
+  width: 320px;
+
+  max-width: 90%;
+
+  transition: transform 0.3s ease;
+
+}
+ 
+.card:hover {
+
+  transform: translateY(-5px);
+
+}
+ 
+/* ===== Animated Background (Subtle Floating Effect) ===== */
+
+@keyframes floating-bg {
+
+  0% { background-position: 0% 50%; }
+
+  50% { background-position: 100% 50%; }
+
+  100% { background-position: 0% 50%; }
+
+}
+ 
+body {
+
+  background: linear-gradient(-45deg, #e0f7fa, #ffffff, #f5f5f5, #e3f2fd);
+
+  background-size: 300% 300%;
+
+  animation: floating-bg 10s ease infinite;
+
+}
+
+ 

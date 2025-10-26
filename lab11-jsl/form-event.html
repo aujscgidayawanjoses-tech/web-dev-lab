@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 6 - Form Event</title>
+</head>
+<style>
+    body {
+      font-family: Poppins, sans-serif;
+      text-align: center;
+      background: #fafafa;
+      padding: 40px;
+    }
+    input {
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+    }
+    button {
+      background-color: #43a047;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #388e3c;
+    }
+</style>
+<body>
+    <h2>Form Event</h2>
+<input type="text" id="name" placeholder="Enter your name">
+<button onclick="showMessage()">Submit</button>
+<p>Prototype only: Developing version</p>
+ 
+  <script>
+    function showMessage() {
+      let name = document.getElementById("name").value;
+      alert("Thank you, " + name + "!");
+    }
+</script>
+</body>
+</html>
