@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity 6 - Reservation Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Reservation Form</h2>
+
+  <form id="resForm">
+    <input type="text" id="rName" placeholder="Full Name" required>
+    <input type="date" id="rDate" required>
+    <input type="time" id="rTime" required>
+    <input type="number" id="rGuests" placeholder="Number of Guests" min="1" required>
+    <button type="submit">Submit Reservation</button>
+  </form>
+
+  <div class="output-box" id="resOutput"></div>
+
+  <footer>Powered by: Joses Gidayawan BSIE-ICT 3A | Pikachu Aesthetic ⚡</footer>
+</div>
+
+<script>
+document.getElementById("resForm").addEventListener("submit", function(event){
+  event.preventDefault();
+
+  const name = document.getElementById("rName").value;
+  const date = document.getElementById("rDate").value;
+  const time = document.getElementById("rTime").value;
+  const guests = document.getElementById("rGuests").value;
+
+  if(name === "" || date === "" || time === "" || guests === ""){
+    alert("All fields are required!");
+    return;
+  }
+
+  const box = document.getElementById("resOutput");
+  box.style.display = "block";
+  box.innerHTML = `
+    ✅ Reservation Submitted! <br><br>
+    <strong>Name:</strong> ${name} <br>
+    <strong>Date:</strong> ${date} <br>
+    <strong>Time:</strong> ${time} <br>
+    <strong>Guests:</strong> ${guests}
+  `;
+
+  document.getElementById("resForm").reset();
+});
+</script>
+
+</body>
+</html>

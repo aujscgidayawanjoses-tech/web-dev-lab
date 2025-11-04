@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity 1 - Simple Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Simple Form</h2>
+
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <input type="email" id="email" placeholder="Enter Email" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="output-box" id="result"></div>
+
+  <footer>Powered by: Joses Gidayawan BSIE-ICT 3A | Pikachu Aesthetic ⚡</footer>
+</div>
+
+<script>
+  document.getElementById("userForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    const output = document.getElementById("result");
+    output.style.display = "block";
+    output.innerHTML = <strong>Name:</strong> ${name} <br> <strong>Email:</strong> ${email};
+  });
+</script>
+
+</body>
+</html>

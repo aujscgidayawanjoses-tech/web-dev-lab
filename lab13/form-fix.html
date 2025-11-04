@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity 2 - Error Identification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Fixed Error Code</h2>
+
+  <input type="text" id="name" placeholder="Enter Name">
+  <button onclick="validateForm()">Check</button>
+
+  <p>Open the browser console to see the output.</p>
+  <p>Prototype only: Developing version</p>
+
+  <footer>Powered by: Joses Gidayawan BSIE-ICT 3A | Pikachu Aesthetic ⚡</footer>
+</div>
+
+<script>
+function validateForm() {
+  let name = document.getElementById("name").value;
+  if (name == "") {
+    alert("Please enter your name.");
+  } else {
+    console.log("Name entered successfully:", name);
+  }
+}
+</script>
+
+</body>
+</html>

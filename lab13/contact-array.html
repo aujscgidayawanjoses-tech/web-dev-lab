@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity 4 - Contact Form Array Storage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Contact Form (Store in Array)</h2>
+
+  <form id="contactForm">
+    <input type="text" id="cName" placeholder="Enter Name" required>
+    <textarea id="cMsg" placeholder="Enter Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="output-box" id="listBox">
+    <h4>Submitted Messages:</h4>
+    <ul id="msgList"></ul>
+  </div>
+
+  <footer>Powered by: Joses Gidayawan BSIE-ICT 3A | Pikachu Aesthetic ⚡</footer>
+</div>
+
+<script>
+let contacts = [];
+
+document.getElementById("contactForm").addEventListener("submit", function(event){
+  event.preventDefault();
+  const name = document.getElementById("cName").value;
+  const message = document.getElementById("cMsg").value;
+
+  contacts.push({name, message});
+
+  let list = document.getElementById("msgList");
+  list.innerHTML = "";
+
+  for (let i = 0; i < contacts.length; i++){
+    let li = document.createElement("li");
+    li.innerHTML = <strong>${contacts[i].name}</strong>: ${contacts[i].message};
+    list.appendChild(li);
+  }
+
+  document.getElementById("listBox").style.display = "block";
+  document.getElementById("contactForm").reset();
+});
+</script>
+
+</body>
+</html>

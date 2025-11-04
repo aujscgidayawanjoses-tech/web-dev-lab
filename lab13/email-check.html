@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity 5 - Email Validator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Email Format Checker</h2>
+
+  <input type="email" id="emailInput" placeholder="Enter Email">
+  <button onclick="checkEmail()">Validate</button>
+
+  <div class="output-box" id="emailResult"></div>
+
+  <footer>Powered by: Joses Gidayawan BSIE-ICT 3A | Pikachu Aesthetic ⚡</footer>
+</div>
+
+<script>
+function checkEmail(){
+  const email = document.getElementById("emailInput").value;
+  const result = document.getElementById("emailResult");
+
+  if(email.includes("@") && email.includes(".")){
+    result.style.display = "block";
+    result.style.background = "#BAFFC9";
+    result.innerHTML = "✅ Email accepted!";
+  } else {
+    result.style.display = "block";
+    result.style.background = "#FFB3B3";
+    result.innerHTML = "❌ Invalid email format";
+  }
+}
+</script>
+
+</body>
+</html>
