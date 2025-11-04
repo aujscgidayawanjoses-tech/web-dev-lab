@@ -27,7 +27,24 @@
 
     <div class="footer card">© 2025 | Powered by: Joses Gidayawan BSIE-ICT 3A</div>
   </div>
+ <script>
+    const products = [
+      { name: "Coffee Beans", quantity: 10, price: "$25" },
+      { name: "Espresso Machine", quantity: 5, price: "$300" },
+      { name: "Mug Set", quantity: 8, price: "$40" }
+    ];
 
-  <script src="table.js"></script>
+    const tbody = document.querySelector("#product-table tbody");
+
+    for (let i = 0; i < products.length; i++) {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${products[i].name}</td>
+        <td>${products[i].quantity}</td>
+        <td>${products[i].price}</td>
+      `;
+      tbody.appendChild(row);
+    }
+  </script>
 </body>
 </html>

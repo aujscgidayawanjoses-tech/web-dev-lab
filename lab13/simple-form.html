@@ -6,32 +6,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <h2>Simple Form Submission</h2>
 
-<div class="container">
-  <h2>Simple Form</h2>
+    <form onsubmit="handleSubmit(event)">
+      <div class="input-field">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+      </div>
 
-  <form id="userForm">
-    <input type="text" id="name" placeholder="Enter Name" required>
-    <input type="email" id="email" placeholder="Enter Email" required>
-    <button type="submit">Submit</button>
-  </form>
+      <div class="input-field">
+        <label>Email:</label>
+        <input type="email" id="email" required>
+      </div>
 
-  <div class="output-box" id="result"></div>
+      <button type="submit">Submit</button>
+    </form>
 
-  <footer>Powered by: Joses Gidayawan BSIE-ICT 3A | Pikachu Aesthetic ⚡</footer>
-</div>
+    <div id="output" class="result-box"></div>
 
-<script>
-  document.getElementById("userForm").addEventListener("submit", function(event){
-    event.preventDefault();
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
+    <p class="credits">Powered by: Joses Gidayawan BSIE-ICT 3A</p>
+  </div>
 
-    const output = document.getElementById("result");
-    output.style.display = "block";
-    output.innerHTML = <strong>Name:</strong> ${name} <br> <strong>Email:</strong> ${email};
-  });
-</script>
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // ✅ stops refresh
 
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+
+      document.getElementById("output").innerHTML = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+      `;
+    }
+  </script>
 </body>
 </html>

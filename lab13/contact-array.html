@@ -1,52 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 4 - Contact Form Array Storage</title>
+  <title>Activity 4 - Contact Form with Array</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <h2>Contact Form (Array Storage)</h2>
 
-<div class="container">
-  <h2>Contact Form (Store in Array)</h2>
+    <form onsubmit="saveContact(event)">
+      <div class="input-field">
+        <label>Name:</label>
+        <input type="text" id="contactName" required>
+      </div>
 
-  <form id="contactForm">
-    <input type="text" id="cName" placeholder="Enter Name" required>
-    <textarea id="cMsg" placeholder="Enter Message" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
+      <div class="input-field">
+        <label>Message:</label>
+        <textarea id="contactMsg" rows="3" required></textarea>
+      </div>
 
-  <div class="output-box" id="listBox">
-    <h4>Submitted Messages:</h4>
-    <ul id="msgList"></ul>
+      <button type="submit">Add Message</button>
+    </form>
+
+    <h3>Submitted Messages:</h3>
+    <ul id="contactList"></ul>
+
+    <p class="credits">Powered by: Joses Gidayawan BSIE-ICT 3A</p>
   </div>
 
-  <footer>Powered by: Joses Gidayawan BSIE-ICT 3A | Pikachu Aesthetic ⚡</footer>
-</div>
+  <script>
+    let contactArray = []; // ✅ stores objects
 
-<script>
-let contacts = [];
+    function saveContact(event) {
+      event.preventDefault();
 
-document.getElementById("contactForm").addEventListener("submit", function(event){
-  event.preventDefault();
-  const name = document.getElementById("cName").value;
-  const message = document.getElementById("cMsg").value;
+      const name = document.getElementById("contactName").value.trim();
+      const msg = document.getElementById("contactMsg").value.trim();
 
-  contacts.push({name, message});
+      contactArray.push({ name: name, message: msg }); // ✅ push object
 
-  let list = document.getElementById("msgList");
-  list.innerHTML = "";
+      document.getElementById("contactList").innerHTML = ""; // clear first
 
-  for (let i = 0; i < contacts.length; i++){
-    let li = document.createElement("li");
-    li.innerHTML = <strong>${contacts[i].name}</strong>: ${contacts[i].message};
-    list.appendChild(li);
-  }
+      for (let i = 0; i < contactArray.length; i++) {
+        const li = document.createElement("li");
+        li.innerHTML = <strong>${contactArray[i].name}:</strong> ${contactArray[i].message};
+        document.getElementById("contactList").appendChild(li);
+      }
 
-  document.getElementById("listBox").style.display = "block";
-  document.getElementById("contactForm").reset();
-});
-</script>
-
+      document.getElementById("contactName").value = "";
+      document.getElementById("contactMsg").value = "";
+    }
+  </script>
 </body>
 </html>

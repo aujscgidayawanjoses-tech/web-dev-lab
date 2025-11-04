@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | Cozy Blend Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>☕ Cozy Blend Café</h1>
+    <p class="owner">Owned by: <b>Joses Gidayawan</b></p>
+    <p class="intro">We’d love to hear what you think!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="feedback.html" class="active">Feedback</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container my-4">
+    <h2>Send Us Your Feedback</h2>
+
+    <form id="feedbackForm" class="row g-3 mt-3">
+      <div class="col-md-6">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" id="fb-name" placeholder="Enter your name">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" id="fb-email" placeholder="Enter your email">
+      </div>
+      <div class="col-12">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" id="fb-message" rows="4" placeholder="Type your feedback..."></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-warning px-4">Submit</button>
+      </div>
+    </form>
+
+    <div id="feedbackSuccess" class="alert alert-success mt-3 d-none">
+      ✅ Feedback submitted successfully!
+    </div>
+
+    <h3 class="mt-5">Previous Messages</h3>
+    <ul id="feedback-list" class="list-group mt-2"></ul>
+
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2025 Cozy Blend Café. All rights reserved.</p>
+    <p class="creator">Created by: Joses Gidayawan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
