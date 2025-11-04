@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Activity 1 - DOM Selection & Text Change</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header card">
+      <div class="brand"><span class="emoji">⚡️🐭</span><strong>Activity 1</strong></div>
+      <div class="note lightning">DOM Selection</div>
+    </div>
+
+    <div class="card">
+      <h2 class="small">DOM Selection & Text Change</h2>
+
+      <p id="page-note">Hello! Click the button to change the heading using DOM selection.</p>
+
+      <h1 id="page-title">Welcome, To Joses Website!</h1>
+
+      <div style="display:flex; gap:12px; margin-top:12px; flex-wrap:wrap;">
+        <button id="change-btn" class="btn">Change Title</button>
+        <button id="reset-btn" class="btn secondary">Reset</button>
+      </div>
+
+      <p class="note prototype" style="display:block; margin-top:14px;">
+        Open the browser console to see the output.
+      </p>
+    </div>
+
+    <div class="footer card">© 2025 | Powered by: Joses Gidayawan BSIE-ICT 3A</div>
+  </div>
+
+  <script src="dom.js"></script>
+</body>
+</html>

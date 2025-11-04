@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Activity 2 - Error Identification</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header card">
+      <div class="brand"><span class="emoji">⚡️🐭</span><strong>Activity 2</strong></div>
+      <div class="note lightning">Error Identification</div>
+    </div>
+
+    <div class="card">
+      <h2 class="small">Find & Fix: DOM Selection Bug</h2>
+
+      <h1 id="title">Welcome!</h1>
+      <button id="changeTitleBtn" class="btn secondary">Change Title</button>
+
+      <p class="note prototype">Open the browser console to see the output.</p>
+      <p class="note prototype">Prototype only: Developing version</p>
+    </div>
+
+    <div class="footer card">© 2025 | Powered by: Joses Gidayawan BSIE-ICT 3A</div>
+  </div>
+
+  <script>
+    // This shows intended fix + console message (prototype)
+    document.getElementById('changeTitleBtn').addEventListener('click', function() {
+      // original buggy code used querySelectorId(...) — fixed here:
+      const el = document.getElementById('title');
+      if (el) {
+        el.innerHTML = "Updated!";
+        console.log("Activity2: Title successfully changed to 'Updated!'");
+      } else {
+        console.error("Activity2: title element not found");
+      }
+    });
+  </script>
+</body>
+</html>
